@@ -1,6 +1,6 @@
 # RT-1: Robotics Transformer, in PyTorch
 PyTorch re-implementation of [RT-1](https://github.com/google-research/robotics_transformer). This model is based on 2022 paper ["RT-1: Robotics Transformer for Real-World Control at Scale"](https://arxiv.org/abs/2212.06817).
-Although this implementation exactly reproduces the original codes unlike other PyTorch implementation such as [lucidrains version](https://github.com/lucidrains/robotic-transformer-pytorch), I made some changes for PyTorch compatibility or simplification.
+Although this implementation exactly reproduces the [original code](https://github.com/google-research/robotics_transformer) unlike other PyTorch implementation such as [lucidrains version](https://github.com/lucidrains/robotic-transformer-pytorch), I made some changes for PyTorch compatibility or simplification.
 
 ## Features
 * Film efficient net based image tokenizer backbone
