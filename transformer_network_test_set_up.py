@@ -20,13 +20,14 @@
 
 
 import copy
-from typing import Optional, Tuple, Union, List, Dict
-from absl.testing import parameterized
-import numpy as np
-from gym import spaces
-import torch
 import unittest
 from collections import OrderedDict
+from typing import Dict, List, Optional, Tuple, Union
+
+import numpy as np
+import torch
+from absl.testing import parameterized
+from gym import spaces
 
 BATCH_SIZE = 2
 TIME_SEQUENCE_LENGTH = 3

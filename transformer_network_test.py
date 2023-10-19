@@ -20,25 +20,21 @@
 
 """Tests for networks."""
 
+import unittest
+from typing import Dict
+
+import numpy as np
 import torch
 import torch.nn.functional as F
 from absl.testing import parameterized
-import unittest
-import numpy as np
-from typing import Dict
-
 
 from pytorch_robotics_transformer import transformer_network
-from pytorch_robotics_transformer.transformer_network_test_set_up import BATCH_SIZE
-from pytorch_robotics_transformer.transformer_network_test_set_up import NAME_TO_INF_OBSERVATIONS
-from pytorch_robotics_transformer.transformer_network_test_set_up import NAME_TO_STATE_SPACES
-from pytorch_robotics_transformer.transformer_network_test_set_up import observations_list
-from pytorch_robotics_transformer.transformer_network_test_set_up import space_names_list
-from pytorch_robotics_transformer.transformer_network_test_set_up import state_space_list
-from pytorch_robotics_transformer.transformer_network_test_set_up import TIME_SEQUENCE_LENGTH
-from pytorch_robotics_transformer.transformer_network_test_set_up import TransformerNetworkTestUtils
-from pytorch_robotics_transformer.tokenizers.utils import batched_space_sampler
-from pytorch_robotics_transformer.tokenizers.utils import np_to_tensor
+from pytorch_robotics_transformer.tokenizers.utils import (
+    batched_space_sampler, np_to_tensor)
+from pytorch_robotics_transformer.transformer_network_test_set_up import (
+    BATCH_SIZE, NAME_TO_INF_OBSERVATIONS, NAME_TO_STATE_SPACES,
+    TIME_SEQUENCE_LENGTH, TransformerNetworkTestUtils, observations_list,
+    space_names_list, state_space_list)
 
 
 class TransformerNetworkTest(TransformerNetworkTestUtils):

@@ -18,10 +18,12 @@
 # You can find the original code from here[https://github.com/google-research/robotics_transformer].
 
 import unittest
+
 import torch
+from absl.testing import parameterized
 
 from pytorch_robotics_transformer.transformer import Transformer
-from absl.testing import parameterized
+
 
 class TransformerTest(parameterized.TestCase, unittest.TestCase):
 

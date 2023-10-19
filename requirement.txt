@@ -1,0 +1,8 @@
+absl-py
+gym
+matplotlib
+numpy
+scikit-image
+torch
+torchvision
+transformers
